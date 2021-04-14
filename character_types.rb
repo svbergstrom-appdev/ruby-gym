@@ -16,4 +16,9 @@
 p "Enter a sentence:"
 user_input = gets.chomp
 number_of_characters = user_input.split("").length
+number_of_letters = user_input.gsub(" ", "").length
+
+p number_of_characters
 p number_of_letters
+number_of_spaces = number_of_characters - number_of_letters
+#doesn't work for numbers yet
