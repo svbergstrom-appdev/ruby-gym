@@ -14,3 +14,6 @@
 #  "Number of digits in the string is: 4"
 
 p "Enter a sentence:"
+user_input = gets.chomp
+number_of_characters = user_input.split("").length
+p number_of_letters

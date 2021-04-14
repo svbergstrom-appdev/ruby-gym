@@ -9,3 +9,12 @@
 # If no name is given, the result should be "One for you, one for me."
 
 p "Enter a name:"
+user_name = gets.chomp
+
+if user_name == ""
+  user_name = "you"
+else
+  user_name = user_name.capitalize
+end
+
+p "One for " + user_name + ", one for me."
